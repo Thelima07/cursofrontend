@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mypage.css ">
+    <title>Mypage</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="btn-abrir" onclick="AbrirMenu()"> &#9776;Abrir</a>
+    </header>
+    <nav id="menu">
+        <a href="#" onclick="FecharMenu()">&times;Fechar</a>
+        <a href="mypage.html">Home</a>
+        <a href="01-introducao.html">Introdução</a>
+        <a href="02-listas-e-links.html ">Listas e Links</a>
+        <a href="03-formatacao-de-texto.html">Formatção de Texto</a>
+    </nav>
+    <main id="conteudo">
+    <h1>My Page</h1>
+        <p>Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um
+        <br> impressor desconhecido pegou uma cozinha de tipos e 
+        para fazer um livro de espécimes de tipos. Ele sobreviveu não apenas cinco séculos, 
+        <br> mas também o salto para a composição eletrônica, 
+        permanecendo essencialmente inalterado. </p>
+    </main>
+    <script>
+        function AbrirMenu(){
+            document.getElementById("menu").style.width = "250px";
+            document.getElementById("conteudo").style.marginLeft = "250px";
+        }
+
+        function FecharMenu(){
+            document.getElementById ("menu").style.width = "0px";
+            document.getElementById("conteudo").style.marginLeft = "0px"
+        }
+
+
+    </script>
+</body>
+</html>
